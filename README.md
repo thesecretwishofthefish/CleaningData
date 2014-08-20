@@ -23,7 +23,7 @@ You should create one R script called run_analysis.R that does the following.
 
 ## Additional Infos
 
-The required script is included in the file run_analysis.R.
+The required script is included in the file [run_analysis.R.](https://github.com/thesecretwishofthefish/CleaningData/blob/master/run_analysis.R)
 
 Lines from 15 to 35 are optionals and the parameters workingDir and scriptSubDir should be customized based on your needs.
 
@@ -36,4 +36,4 @@ The original dataset includes accelerometer and gyroscope data collected from di
 The script calculates a subset of mean grouped by subject and activity.
 As result of its execution the script produces the file tidy.txt
 
-More details about the script can be found in the file CodeBook.MD
+More details about the script can be found in the code comments or in the file [CodeBook.MD](https://github.com/thesecretwishofthefish/CleaningData/blob/master/run_analysis.R)
