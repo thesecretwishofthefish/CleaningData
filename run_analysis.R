@@ -75,9 +75,9 @@ colnames(all) =colNames
 
 # 5 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-tidy<- aggregate(all[,!names(all) %in% c('activityCode','subjectCode')],by=list(activityCode=all$activityCode,subjectCode = all$subjectCode),FUN=mean, na.rm=TRUE);
+tidy<- aggregate(all[,!names(all) %in% c('activityCode','subjectCode')],by=list(activityCode=all$activityCode,subjectCode = all$subjectCode),FUN=mean, na.rm=TRUE); #grouping and averages calculation
 tidy = merge(tidy,activityLabels,by='activityCode',all.x=TRUE);
 colnames(tidy)[22]="activityDesc"
-tidy<-subset(tidy,select=c(1,22,2:20))
+tidy<-subset(tidy,select=c(1,22,2:20)) #columns reordering
 #write.csv(file="tidy.csv", x=tidy)
-write.table(tidy,file="tidy.txt",row.names=FALSE)
+write.table(tidy,file="tidy.txt",row.names=FALSE) #output file
