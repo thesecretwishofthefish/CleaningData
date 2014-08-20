@@ -21,9 +21,13 @@ You should create one R script called run_analysis.R that does the following.
     -Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 "
 
-The required script is included in the file run_analysis.R. Lines from 15 to 35 are optionals and the parameters workingDir and scriptSubDir should be customized based on your needs. They are related to the download of the dataset and the initialization of the R working environment, you could start the execution of the script from line 36 if you have previously downloaded and extracted the dataset.zip in your own working directory.
-The original dataset includes accelerometer and gyroscope data collected from different subjects during six different possible activities (more details in the README.txt file included in the source zip).
+The required script is included in the file run_analysis.R.
+Lines from 15 to 35 are optionals and the parameters workingDir and scriptSubDir should be customized based on your needs.
+They are related to the download of the dataset and the initialization of the R working environment, 
+you could start the execution of the script from line 36 if you have previously downloaded and extracted the dataset.zip in your own working directory.
+The original dataset includes accelerometer and gyroscope data collected from different subjects during six different possible activities
+(more details in the README.txt file included in the source zip).
 The script calculates a subset of mean grouped by subject and activity.
-As result of its execution the script produces the two files:tidy.txt and tidy.csv.
+As result of its execution the script produces the file tidy.txt
 
 More details about the script can be found in the file CodeBook.MD
