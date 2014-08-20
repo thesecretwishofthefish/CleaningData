@@ -47,7 +47,7 @@ yTest <- read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE)
 # Assigning names to columns
 colnames(activityLabels) = c('activityCode','activityDesc');
 colnames(subjectTrain) = "subjectCode";
-colnames(xTrain) = features[,2];
+colnames(xTrain) = features[,2]; #Labels are loaded from features.txt
 colnames(yTrain) = "activityCode";
 colnames(subjectTest) = "subjectCode";
 colnames(xTest) = features[,2];
@@ -58,7 +58,7 @@ train = cbind(yTrain,subjectTrain,xTrain);
 test = cbind(yTest,subjectTest,xTest);
 all = rbind(train,test);
 
-# 2 - Extracts only the measurements on the mean and standard deviation for each measurement. 
+# 2 - Extracts,using regular expressions, only the measurements on the mean and standard deviation for each measurement. 
 all<- all[(grepl("-mean\\(\\)|-std\\(\\)|activity|subject", colnames(all)) &!grepl("mean..-|-meanFreq..|-std()..-", colnames(all)))]
 
 # 3 - Uses descriptive activity names to name the activities in the data set
