@@ -11,51 +11,51 @@ while wearing a smartphone (Samsung Galaxy S II) on the waist. Signal coming fro
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
--tBodyAcc-XYZ
--tGravityAcc-XYZ
--tBodyAccJerk-XYZ
--tBodyGyro-XYZ
--tBodyGyroJerk-XYZ
--tBodyAccMag
--tGravityAccMag
--tBodyAccJerkMag
--tBodyGyroMag
--tBodyGyroJerkMag
--fBodyAcc-XYZ
--fBodyAccJerk-XYZ
--fBodyGyro-XYZ
--fBodyAccMag
--fBodyAccJerkMag
--fBodyGyroMag
--fBodyGyroJerkMag
+	-tBodyAcc-XYZ
+	-tGravityAcc-XYZ
+	-tBodyAccJerk-XYZ
+	-tBodyGyro-XYZ
+	-tBodyGyroJerk-XYZ
+	-tBodyAccMag
+	-tGravityAccMag
+	-tBodyAccJerkMag
+	-tBodyGyroMag
+	-tBodyGyroJerkMag
+	-fBodyAcc-XYZ
+	-fBodyAccJerk-XYZ
+	-fBodyGyro-XYZ
+	-fBodyAccMag
+	-fBodyAccJerkMag
+	-fBodyGyroMag
+	-fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
--mean(): Mean value
--std(): Standard deviation
--mad(): Median absolute deviation 
--max(): Largest value in array
--min(): Smallest value in array
--sma(): Signal magnitude area
--energy(): Energy measure. Sum of the squares divided by the number of values. 
--iqr(): Interquartile range 
--entropy(): Signal entropy
--arCoeff(): Autorregresion coefficients with Burg order equal to 4
--correlation(): correlation coefficient between two signals
--maxInds(): index of the frequency component with largest magnitude
--meanFreq(): Weighted average of the frequency components to obtain a mean frequency
--skewness(): skewness of the frequency domain signal 
--kurtosis(): kurtosis of the frequency domain signal 
--bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
--angle(): Angle between to vectors.
+	-mean(): Mean value
+	-std(): Standard deviation
+	-mad(): Median absolute deviation 
+	-max(): Largest value in array
+	-min(): Smallest value in array
+	-sma(): Signal magnitude area
+	-energy(): Energy measure. Sum of the squares divided by the number of values. 
+	-iqr(): Interquartile range 
+	-entropy(): Signal entropy
+	-arCoeff(): Autorregresion coefficients with Burg order equal to 4
+	-correlation(): correlation coefficient between two signals
+	-maxInds(): index of the frequency component with largest magnitude
+	-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+	-skewness(): skewness of the frequency domain signal 
+	-kurtosis(): kurtosis of the frequency domain signal 
+	-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+	-angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
--gravityMean
--tBodyAccMean
--tBodyAccJerkMean
--tBodyGyroMean
--tBodyGyroJerkMean
+	-gravityMean
+	-tBodyAccMean
+	-tBodyAccJerkMean
+	-tBodyGyroMean
+	-tBodyGyroJerkMean
 
 A datailed description of the original dataset is reported in the file [features_info.txt](https://github.com/thesecretwishofthefish/CleaningData/blob/master/features_info.txt)
 
@@ -63,24 +63,24 @@ A complete list of the data collected features is included in the file [features
 
 
 
--activityCode : Activity Id
--activityDesc : Activity Description
--subjectCode : Subject Id
--timeBodyAccMagMean 
--timeBodyAccMagStdDev 
--timeGravityAccMagMean 
--timeGravityAccMagStdDev 
--timeBodyAccJerkMagMean 
--timeBodyAccJerkMagStdDev 
--timeBodyGyroMagMean 
--timeBodyGyroMagStdDev 
--timeBodyGyroJerkMagMean 
--timeBodyGyroJerkMagStdDev 
--freqBodyAccMagMean 
--freqBodyAccMagStdDev 
--freqBodyBodyAccJerkMagMean 
--freqBodyBodyAccJerkMagStdDev 
--freqBodyBodyGyroMagMean 
--freqBodyBodyGyroMagStdDev 
--freqBodyBodyGyroJerkMagMean 
--freqBodyBodyGyroJerkMagStdDev
+	-activityCode : Activity Id
+	-activityDesc : Activity Description
+	-subjectCode : Subject Id
+	-timeBodyAccMagMean 
+	-timeBodyAccMagStdDev 
+	-timeGravityAccMagMean 
+	-timeGravityAccMagStdDev 
+	-timeBodyAccJerkMagMean 
+	-timeBodyAccJerkMagStdDev 
+	-timeBodyGyroMagMean 
+	-timeBodyGyroMagStdDev 
+	-timeBodyGyroJerkMagMean 
+	-timeBodyGyroJerkMagStdDev 
+	-freqBodyAccMagMean 
+	-freqBodyAccMagStdDev 
+	-freqBodyBodyAccJerkMagMean 
+	-freqBodyBodyAccJerkMagStdDev 
+	-freqBodyBodyGyroMagMean 
+	-freqBodyBodyGyroMagStdDev 
+	-freqBodyBodyGyroJerkMagMean 
+	-freqBodyBodyGyroJerkMagStdDev
