@@ -44,4 +44,4 @@ The original dataset includes accelerometer and gyroscope data collected from di
 The script calculates a subset of mean grouped by subject and activity.
 As result of its execution the script produces the file tidy.txt
 
-More details about the script can be found in the code comments or in the file [CodeBook.MD](https://github.com/thesecretwishofthefish/CleaningData/blob/master/CodeBook.MD)
+More details about the script can be found in the code comments or in the file [codebook.md](https://github.com/thesecretwishofthefish/CleaningData/blob/master/codebook.md)
