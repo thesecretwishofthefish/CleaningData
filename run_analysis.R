@@ -20,7 +20,7 @@ zipFileName <-"source.zip"
 
 #directory init
 setwd(workingDir)
-if(!file.exists(scriptSubDir)){dir.create(scriptSubDir)}
+if(!file.exists(scriptSubDir)){dir.create(scriptSubDir)} 
 setwd(paste(workingDir,scriptSubDir,sep="/"))
 
 #libraries init
@@ -54,9 +54,9 @@ colnames(xTest) = features[,2];
 colnames(yTest) = "activityCode";
 
 # 1 - Merges the training and the test sets to create one data set.
-train = cbind(yTrain,subjectTrain,xTrain);
-test = cbind(yTest,subjectTest,xTest);
-all = rbind(train,test);
+train = cbind(yTrain,subjectTrain,xTrain); #column binding of train data
+test = cbind(yTest,subjectTest,xTest); #column binding of test data
+all = rbind(train,test); #row bindong of train and test data
 
 # 2 - Extracts,using regular expressions, only the measurements on the mean and standard deviation for each measurement. 
 all<- all[(grepl("-mean\\(\\)|-std\\(\\)|activity|subject", colnames(all)) &!grepl("mean..-|-meanFreq..|-std()..-", colnames(all)))]
@@ -64,10 +64,11 @@ all<- all[(grepl("-mean\\(\\)|-std\\(\\)|activity|subject", colnames(all)) &!gre
 # 3 - Uses descriptive activity names to name the activities in the data set
 all = merge(all,activityLabels,by='activityCode',all.x=TRUE);
 
-# 4 - Appropriately labels the data set with descriptive variable names. 
+# 4 - Appropriately labels the data set with descriptive variable names.
+# using gsub function with the appropriate regular expressions parameter to rename columns 
 colNames=colnames(all)
-colNames <- gsub("-mean", "Mean", colNames)
-colNames <- gsub("-std", "StdDev", colNames)
+colNames <- gsub("-mean", "Mean", colNames) 
+colNames <- gsub("-std", "StdDev", colNames) 
 colNames <- gsub("[()-]", "", colNames)
 colNames <- gsub("^(t)", "time", colNames)
 colNames <- gsub("^(f)", "freq", colNames)
