@@ -61,26 +61,26 @@ A datailed description of the original dataset is reported in the file [features
 
 A complete list of the data collected features is included in the file [features.txt](https://github.com/thesecretwishofthefish/CleaningData/blob/master/features.txt) 
 
+The following list is the subset of the columns (properly renamed, see section #4 of the run_analysis.R) selected by the script  
 
-
-	-activityCode : Activity Id
-	-activityDesc : Activity Description
-	-subjectCode : Subject Id
-	-timeBodyAccMagMean 
-	-timeBodyAccMagStdDev 
-	-timeGravityAccMagMean 
-	-timeGravityAccMagStdDev 
-	-timeBodyAccJerkMagMean 
-	-timeBodyAccJerkMagStdDev 
-	-timeBodyGyroMagMean 
-	-timeBodyGyroMagStdDev 
-	-timeBodyGyroJerkMagMean 
-	-timeBodyGyroJerkMagStdDev 
-	-freqBodyAccMagMean 
-	-freqBodyAccMagStdDev 
-	-freqBodyBodyAccJerkMagMean 
-	-freqBodyBodyAccJerkMagStdDev 
-	-freqBodyBodyGyroMagMean 
-	-freqBodyBodyGyroMagStdDev 
-	-freqBodyBodyGyroJerkMagMean 
-	-freqBodyBodyGyroJerkMagStdDev
+	-activityCode : Activity Id (ranging from 1 to 6)
+	-activityDesc : Activity Description (with six levels : WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+	-subjectCode : Subject/Volunteer Id (ranging from 1 to 30)
+	-timeBodyAccMagMean : numeric
+	-timeBodyAccMagStdDev : numeric
+	-timeGravityAccMagMean : numeric
+	-timeGravityAccMagStdDev : numeric
+	-timeBodyAccJerkMagMean : numeric
+	-timeBodyAccJerkMagStdDev : numeric
+	-timeBodyGyroMagMean : numeric
+	-timeBodyGyroMagStdDev : numeric
+	-timeBodyGyroJerkMagMean : numeric
+	-timeBodyGyroJerkMagStdDev : numeric
+	-freqBodyAccMagMean : numeric
+	-freqBodyAccMagStdDev : numeric
+	-freqBodyBodyAccJerkMagMean : numeric
+	-freqBodyBodyAccJerkMagStdDev : numeric 
+	-freqBodyBodyGyroMagMean : numeric 
+	-freqBodyBodyGyroMagStdDev  : numeric
+	-freqBodyBodyGyroJerkMagMean  : numeric
+	-freqBodyBodyGyroJerkMagStdDev : numeric
